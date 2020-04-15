@@ -6,7 +6,7 @@ public class SwiftFlutterMPGSPlugin: NSObject, FlutterPlugin {
     var apiVersion:String? = nil
     
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "flutter_mpgs", binaryMessenger: registrar.messenger())
+        let channel = FlutterMethodChannel(name: "flutter_mpgs_sdk", binaryMessenger: registrar.messenger())
         let instance = SwiftFlutterMPGSPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
