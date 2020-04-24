@@ -10,6 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  mask_text_input_formatter: ^1.0.6
+  webview_flutter:
+    git:
+      url: https://github.com/DSenanayake/plugins.git
+      path: packages/webview_flutter
 
 dev_dependencies:
   flutter_test:
@@ -27,10 +32,12 @@ flutter:
   plugin:
     androidPackage: com.paymedia.flutter_mpgs_sdk
     pluginClass: FlutterMpgsSdkPlugin
-
   # To add assets to your plugin package, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
+  assets:
+   - packages/flutter_mpgs_sdk/assets/images/success.png
+   - packages/flutter_mpgs_sdk/assets/images/master.png
+   - packages/flutter_mpgs_sdk/assets/images/visa.png
+   - packages/flutter_mpgs_sdk/assets/images/orelpay.png
   #  - images/a_dot_ham.jpeg
   #
   # For details regarding assets in packages, see
@@ -38,7 +45,6 @@ flutter:
   #
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
-
   # To add custom fonts to your plugin package, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a

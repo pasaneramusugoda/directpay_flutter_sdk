@@ -2,20 +2,26 @@ PODS:
   - Flutter (1.0.0)
   - flutter_mpgs_sdk (0.0.1):
     - Flutter
+  - webview_flutter (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_mpgs_sdk (from `.symlinks/plugins/flutter_mpgs_sdk/ios`)
+  - webview_flutter (from `.symlinks/plugins/webview_flutter/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
   flutter_mpgs_sdk:
     :path: ".symlinks/plugins/flutter_mpgs_sdk/ios"
+  webview_flutter:
+    :path: ".symlinks/plugins/webview_flutter/ios"
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_mpgs_sdk: 91d4ff597c72a9a5fdf67d24d78e6bf7db965a8a
+  webview_flutter: db3aba222b23e4dc432e0c5882834123dc50ff9f
 
 PODFILE CHECKSUM: 1b66dae606f75376c5f2135a8290850eeb09ae83
 

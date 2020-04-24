@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_mpgs_sdk/flutter_mpgs.dart';
+import 'package:flutter_mpgs_sdk/card_add_form.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,6 +19,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   void initState() {
+    CardAddForm.init("");
     super.initState();
   }
 
@@ -41,6 +43,7 @@ class _MyAppState extends State<MyApp> {
       _initStatus = initState;
     });
   }
+
   Future<void> _updateSession() async {
     String updateStatus = "";
 
@@ -60,7 +63,7 @@ class _MyAppState extends State<MyApp> {
           month: month,
           cvv: cvv);
       updateStatus =
-      "Session updated.\nsessionId: $sessionId\ncardholderName:$cardholderName\ncardNumber:$cardNumber\nyear:$year\nmonth:$month\ncvv:$cvv";
+          "Session updated.\nsessionId: $sessionId\ncardholderName:$cardholderName\ncardNumber:$cardNumber\nyear:$year\nmonth:$month\ncvv:$cvv";
     } on PlatformException catch (e) {
       print(e);
       updateStatus = e.message;
@@ -74,49 +77,12 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text("MPGS Test",
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.title),
-            SizedBox(
-              height: 20,
-            ),
-            RaisedButton(
-              child: Text("Init SDK"),
-              onPressed: () {
-                this._initSDK();
-              },
-            ),
-            Text(
-              "$_initStatus",
-              textAlign: TextAlign.center,
-            ),
-            TextFormField(onChanged: (t) {}),
-            SizedBox(
-              height: 20,
-            ),
-            RaisedButton(
-              child: Text("Update Session"),
-              onPressed: () {
-                this._updateSession();
-              },
-            ),
-            Text(
-              "$_updateStatus",
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
-      ),
+          appBar: AppBar(
+            title: const Text('Plugin example app'),
+          ),
+          body: CardAddForm()),
     );
   }
 }
