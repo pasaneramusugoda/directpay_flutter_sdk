@@ -3,7 +3,7 @@ import 'dart:io';
 import '../flutter_mpgs.dart';
 
 const String STAGE = Environment.DEV; //DEV or PROD
-const bool IS_DEV = true; //use to enable logs
+const bool IS_DEV = false; //use to enable logs
 
 class Environment {
   static const String DEV = "dev";
