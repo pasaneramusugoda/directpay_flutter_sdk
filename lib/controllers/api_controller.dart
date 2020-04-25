@@ -12,24 +12,27 @@ fetch(BuildContext context, String url, Map params,
   HttpClient httpClient = new HttpClient();
   HttpClientRequest request = await httpClient.postUrl(Uri.parse(url));
   request.headers.set('content-type', 'application/json');
-  request.headers.set('Authorization', CardAddForm.accessToken);
+  request.headers.set('Authorization', 'Bearer ' + CardAddForm.accessToken);
 
   if (params == null) {
     params = Map();
   }
 
-  params["device"] = {"os": getPlatform()};
+  params["platform"] = getPlatform();
   params["version"] = Parameters.VERSION;
   if (IS_DEV) {
+    print("url:" + url);
     print(params);
+    print("token: " + CardAddForm.accessToken);
   }
   request.add(utf8.encode(json.encode(params)));
   HttpClientResponse response = await request.close();
   // todo - you should check the response.statusCode
   try {
-    print("response code: " + response.statusCode.toString());
     String reply = await response.transform(utf8.decoder).join();
-    print("response: " + reply);
+    if (IS_DEV) {
+      print("response: " + reply);
+    }
     switch (response.statusCode) {
       case 200:
         final responseJson = json.decode(reply);

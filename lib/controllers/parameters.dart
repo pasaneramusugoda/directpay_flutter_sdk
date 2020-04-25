@@ -15,8 +15,8 @@ class Parameters {
   static const String REGION =
       STAGE == Environment.PROD ? Region.ASIA_PACIFIC : Region.MTF;
   static const String BASE_URL = STAGE == Environment.DEV
-      ? "https://dev.directpay.lk/v1/mpg/internal/api/dp/sdk/"
-      : "https://prod.directpay.lk/v1/mpg/internal/api/dp/sdk/";
+      ? "https://dev.paymediasolutions.com/v1/mpg/api/external/cardManage/"
+      : "https://dev.paymediasolutions.com/v1/mpg/api/external/cardManage/";
 }
 
 class APIRoutes {
@@ -37,7 +37,7 @@ class GatewayResponse {
   static const String AUTHENTICATION_SUCCESSFUL = "AUTHENTICATION_SUCCESSFUL";
   static const String REDIRECT_SCHEMA = "https";
   static const String ACS_RESULT = "acsResult";
-  static const String REDIRECT_HOST = "prod.directpay.lk";
+  static const String REDIRECT_HOST = "prod.orelpay.lk";
 }
 
 getPlatform() {

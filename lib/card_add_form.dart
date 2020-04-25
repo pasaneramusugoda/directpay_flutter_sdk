@@ -5,7 +5,6 @@ import 'package:flutter_mpgs_sdk/controllers/check_3ds_webview.dart';
 import 'package:flutter_mpgs_sdk/controllers/parameters.dart';
 import 'package:flutter_mpgs_sdk/styles/card_styles.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
-
 import 'flutter_mpgs.dart';
 
 class CardAddForm extends StatefulWidget {
@@ -26,6 +25,9 @@ class CardAddForm extends StatefulWidget {
 
 class _CardAddForm extends State<CardAddForm> {
   String session, reference;
+  final _addFormKey = GlobalKey<FormState>();
+  final _otpFormKey = GlobalKey<FormState>();
+
   int state = ScreenState.ADD_CARD_WIDGET;
   String errorMessage, errorTitle, otpText = "";
 
@@ -47,22 +49,19 @@ class _CardAddForm extends State<CardAddForm> {
 
   @override
   void initState() {
-    nicknameController.text = "Test";
-    nameController.text = "Deeptha";
-    numberController.text = "5473-5001-6000-1018";
-    mmController.text = "10";
-    yyController.text = "22";
-    cvvController.text = "123";
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-        child: Container(
-            color: widget.backgroundColor,
-            padding: EdgeInsets.all(10),
-            child: _buildUI()));
+      child: IgnorePointer(
+          ignoring: processing,
+          child: Container(
+              color: widget.backgroundColor,
+              padding: EdgeInsets.all(10),
+              child: _buildUI())),
+    );
   }
 
   _buildUI() {
@@ -83,25 +82,182 @@ class _CardAddForm extends State<CardAddForm> {
   }
 
   _otpUI() {
-    return Column(
+    return Form(
+      key: _otpFormKey,
+      child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(this.otpText),
+            SizedBox(height: 10),
+            TextFormField(
+              controller: otpController,
+              keyboardType: TextInputType.numberWithOptions(decimal: true),
+              style: defaultTextStyle(widget.textColor),
+              decoration: InputDecoration(hintText: "0.0"),
+              validator: (value) {
+                if (value.isEmpty) {
+                  return "Invalid amount.";
+                }
+                return null;
+              },
+            ),
+            _errorContainer(),
+            SizedBox(height: 10),
+            SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: RaisedButton(
+                  color: widget.buttonColor,
+                  onPressed: this.processing ? null : _verify,
+                  child: this.processing
+                      ? SizedBox(
+                          height: 30,
+                          width: 30,
+                          child: CircularProgressIndicator(
+                            backgroundColor: widget.buttonTextColor,
+                          ))
+                      : Text(
+                          "Verify",
+                          style: TextStyle(color: widget.buttonTextColor),
+                        ),
+                )),
+            SizedBox(height: 10),
+            SizedBox(
+                width: double.infinity,
+                child: FlatButton(
+                  color: widget.buttonColor,
+                  onPressed: this.processing
+                      ? null
+                      : () {
+                          _setScreen(ScreenState.ADD_CARD_WIDGET);
+                        },
+                  child: Text(
+                    "Back",
+                    style: TextStyle(color: widget.buttonTextColor),
+                  ),
+                ))
+          ]),
+    );
+  }
+
+  _verify() async {
+    _setErrorMessage(null);
+    FocusScope.of(context).requestFocus(new FocusNode());
+    if (!_otpFormKey.currentState.validate()) {
+      return;
+    }
+    final completed = await this._verifyCard(reference, otpController.text);
+    if (completed) {
+      this._sendAddCardRequest();
+    }
+  }
+
+  _addUI() {
+    return Form(
+      key: _addFormKey,
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(this.otpText),
-          SizedBox(height: 10),
           TextFormField(
-            controller: otpController,
-            keyboardType: TextInputType.numberWithOptions(decimal: true),
+            controller: nicknameController,
+            decoration: InputDecoration(hintText: "Nickname"),
+            keyboardType: TextInputType.text,
             style: defaultTextStyle(widget.textColor),
-            decoration: InputDecoration(hintText: "0.0"),
+            validator: (value) {
+              if (value.isEmpty) {
+                return "Please enter a nickname for the card.";
+              }
+              return null;
+            },
           ),
+          TextFormField(
+            controller: nameController,
+            decoration: InputDecoration(hintText: "Cardholder Name"),
+            keyboardType: TextInputType.text,
+            style: defaultTextStyle(widget.textColor),
+            validator: (value) {
+              if (value.isEmpty) {
+                return "Please enter cardholder name.";
+              }
+              return null;
+            },
+          ),
+          TextFormField(
+            controller: numberController,
+            decoration: InputDecoration(hintText: "Card Number"),
+            keyboardType: TextInputType.number,
+            style: defaultTextStyle(widget.textColor),
+            inputFormatters: [maskFormatter],
+            validator: (value) {
+              if (value.length < 19) {
+                return "Please valid card number.";
+              }
+              return null;
+            },
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              SizedBox(
+                child: TextFormField(
+                  controller: mmController,
+                  decoration: InputDecoration(hintText: "MM"),
+                  keyboardType: TextInputType.number,
+                  style: defaultTextStyle(widget.textColor),
+                  inputFormatters: [dateFormatter],
+                  validator: (value) {
+                    if (value.isEmpty) {
+                      return "Invalid.";
+                    }
+                    return null;
+                  },
+                ),
+                width: 50,
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              SizedBox(
+                child: TextFormField(
+                  controller: yyController,
+                  decoration: InputDecoration(hintText: "YY"),
+                  keyboardType: TextInputType.number,
+                  style: defaultTextStyle(widget.textColor),
+                  inputFormatters: [dateFormatter],
+                  validator: (value) {
+                    if (value.isEmpty) {
+                      return "Invalid.";
+                    }
+                    return null;
+                  },
+                ),
+                width: 50,
+              ),
+            ],
+          ),
+          SizedBox(
+              width: 110,
+              child: TextFormField(
+                controller: cvvController,
+                decoration: InputDecoration(hintText: "CVV"),
+                keyboardType: TextInputType.number,
+                style: defaultTextStyle(widget.textColor),
+                inputFormatters: [cvvFormatter],
+                validator: (value) {
+                  if (value.length < 3) {
+                    return "Invalid CVV";
+                  }
+                  return null;
+                },
+              )),
           _errorContainer(),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           SizedBox(
               width: double.infinity,
               height: 50,
               child: RaisedButton(
                 color: widget.buttonColor,
-                onPressed: this.processing ? null : _verify,
+                onPressed: this.processing ? null : _continue,
                 child: this.processing
                     ? SizedBox(
                         height: 30,
@@ -110,103 +266,13 @@ class _CardAddForm extends State<CardAddForm> {
                           backgroundColor: widget.buttonTextColor,
                         ))
                     : Text(
-                        "Verify",
+                        "Continue",
                         style: TextStyle(color: widget.buttonTextColor),
                       ),
-              ))
-        ]);
-  }
-
-  _verify() async {
-    final completed = await this._verifyCard(reference, otpController.text);
-    if (completed) {
-      this._sendAddCardRequest();
-    }
-  }
-
-//todo: remove initial values
-  _addUI() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        TextFormField(
-          controller: nicknameController,
-          decoration: InputDecoration(hintText: "Nickname"),
-          keyboardType: TextInputType.text,
-          style: defaultTextStyle(widget.textColor),
-        ),
-        TextFormField(
-          controller: nameController,
-          decoration: InputDecoration(hintText: "Cardholder Name"),
-          keyboardType: TextInputType.text,
-          style: defaultTextStyle(widget.textColor),
-        ),
-        TextFormField(
-          controller: numberController,
-          decoration: InputDecoration(hintText: "Card Number"),
-          keyboardType: TextInputType.number,
-          style: defaultTextStyle(widget.textColor),
-          inputFormatters: [maskFormatter],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            SizedBox(
-              child: TextFormField(
-                controller: mmController,
-                decoration: InputDecoration(hintText: "MM"),
-                keyboardType: TextInputType.number,
-                style: defaultTextStyle(widget.textColor),
-                inputFormatters: [dateFormatter],
-              ),
-              width: 50,
-            ),
-            SizedBox(
-              width: 10,
-            ),
-            SizedBox(
-              child: TextFormField(
-                controller: yyController,
-                decoration: InputDecoration(hintText: "YY"),
-                keyboardType: TextInputType.number,
-                style: defaultTextStyle(widget.textColor),
-                inputFormatters: [dateFormatter],
-              ),
-              width: 50,
-            ),
-          ],
-        ),
-        SizedBox(
-            width: 110,
-            child: TextFormField(
-              controller: cvvController,
-              decoration: InputDecoration(hintText: "CVV"),
-              keyboardType: TextInputType.number,
-              style: defaultTextStyle(widget.textColor),
-              inputFormatters: [cvvFormatter],
-            )),
-        _errorContainer(),
-        SizedBox(height: 20),
-        SizedBox(
-            width: double.infinity,
-            height: 50,
-            child: RaisedButton(
-              color: widget.buttonColor,
-              onPressed: this.processing ? null : _continue,
-              child: this.processing
-                  ? SizedBox(
-                      height: 30,
-                      width: 30,
-                      child: CircularProgressIndicator(
-                        backgroundColor: widget.buttonTextColor,
-                      ))
-                  : Text(
-                      "Continue",
-                      style: TextStyle(color: widget.buttonTextColor),
-                    ),
-            )),
-        _poweredBy()
-      ],
+              )),
+          _poweredBy()
+        ],
+      ),
     );
   }
 
@@ -233,7 +299,11 @@ class _CardAddForm extends State<CardAddForm> {
   }
 
   _continue() async {
+    FocusScope.of(context).requestFocus(new FocusNode());
     _setErrorMessage(null);
+    if (!_addFormKey.currentState.validate()) {
+      return;
+    }
     String name = this.nameController.text;
     String number = this.numberController.text.replaceAll('-', '');
     String mm = this.mmController.text;
@@ -367,7 +437,11 @@ class _CardAddForm extends State<CardAddForm> {
           SizedBox(height: 10),
           FlatButton(
             color: widget.buttonColor,
-            onPressed: this.processing ? null : _verify,
+            onPressed: this.processing
+                ? null
+                : () {
+                    _setScreen(ScreenState.ADD_CARD_WIDGET);
+                  },
             child: this.processing
                 ? SizedBox(
                     height: 30,
@@ -394,6 +468,12 @@ class _CardAddForm extends State<CardAddForm> {
     params["cardNickname"] = nicknameController.text;
 
     fetch(context, APIRoutes.ADD_CARD, params, success: (data) {
+      nicknameController.text = "";
+      nameController.text = "";
+      numberController.text = "";
+      mmController.text = "";
+      yyController.text = "";
+      cvvController.text = "";
       setState(() {
         _setScreen(ScreenState.SUCCESS_WIDGET);
       });
