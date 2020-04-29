@@ -2,7 +2,7 @@ import 'dart:io';
 
 import '../flutter_mpgs.dart';
 
-const String STAGE = Environment.DEV; //DEV or PROD
+const String STAGE = Environment.PROD; //DEV or PROD
 const bool IS_DEV = false; //use to enable logs
 
 class Environment {
@@ -16,7 +16,7 @@ class Parameters {
       STAGE == Environment.PROD ? Region.ASIA_PACIFIC : Region.MTF;
   static const String BASE_URL = STAGE == Environment.DEV
       ? "https://dev.paymediasolutions.com/v1/mpg/api/external/cardManage/"
-      : "https://dev.paymediasolutions.com/v1/mpg/api/external/cardManage/";
+      : "https://prod.orelpay.lk/v1/mpg/api/external/cardManage/";
 }
 
 class APIRoutes {
