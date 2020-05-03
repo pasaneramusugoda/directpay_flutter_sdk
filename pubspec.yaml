@@ -11,10 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   mask_text_input_formatter: ^1.0.6
-  webview_flutter:
-    git:
-      url: https://github.com/DSenanayake/plugins.git
-      path: packages/webview_flutter
+  webview_flutter: ^0.3.21
 
 dev_dependencies:
   flutter_test:
