@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
 import 'parameters.dart';
 
@@ -17,18 +17,21 @@ class Check3DSWebView extends StatefulWidget {
 
 class _Check3DSWebView extends State<Check3DSWebView> {
   Map parsedACSResult;
-  final Completer<WebViewController> _controller =
-      Completer<WebViewController>();
+  final flutterWebviewPlugin = new FlutterWebviewPlugin();
 
   @override
   void initState() {
     super.initState();
+    flutterWebviewPlugin.onUrlChanged.listen((String url) {
+      print(url);
+      _handleUriChange(url);
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.white,
+    return WebviewScaffold(
+//        backgroundColor: Colors.white,
         appBar: new AppBar(
           backgroundColor: Colors.white,
           centerTitle: true,
@@ -44,18 +47,24 @@ class _Check3DSWebView extends State<Check3DSWebView> {
             textAlign: TextAlign.center,
           ),
         ),
-        body: WebView(
-          onPageFinished: (url) {
-            this._handleUriChange(url);
-          },
-          javascriptMode: JavascriptMode.unrestricted,
-          onWebViewCreated: (WebViewController webViewController) {
-            _controller.complete(webViewController);
-          },
-          initialUrl:
-              Uri.dataFromString(this.widget.html, mimeType: 'text/html')
-                  .toString(),
-        ));
+        url: new Uri.dataFromString(this.widget.html, mimeType: 'text/html')
+            .toString(),
+//      initialChild: Center(
+//        child: CircularProgressIndicator(),
+//      ),
+//        body: WebView(
+//          onPageFinished: (url) {
+//            this._handleUriChange(url);
+//          },
+//          javascriptMode: JavascriptMode.unrestricted,
+//          onWebViewCreated: (WebViewController webViewController) {
+//            _controller.complete(webViewController);
+//          },
+//          initialUrl:
+//              Uri.dataFromString(this.widget.html, mimeType: 'text/html')
+//                  .toString(),
+//        )
+    );
   }
 
   void _handleUriChange(String url) {
