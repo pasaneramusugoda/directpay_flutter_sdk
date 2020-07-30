@@ -3,7 +3,7 @@ import 'dart:io';
 import '../flutter_mpgs.dart';
 
 const String STAGE = Environment.PROD; //DEV or PROD
-const bool IS_DEV = false; //use to enable logs
+const bool IS_DEV = true; //use to enable logs
 
 class Environment {
   static const String DEV = "dev";
@@ -30,6 +30,7 @@ class ScreenState {
   static const int OTP_WIDGET = 2;
   static const int SUCCESS_WIDGET = 4;
   static const int ADD_CARD_WIDGET = 1;
+  static const int INITIAL_WIDGET = 0;
   static const int FAILED_WIDGET = 3;
 }
 
