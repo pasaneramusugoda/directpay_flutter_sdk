@@ -3,7 +3,7 @@
     package="com.paymedia.flutter_mpgs_sdk">
 
     <application>
-        <activity android:name=".MPGS.ScannerActivity" android:theme="@style/Theme.AppCompat"></activity>
+        <activity android:name=".MPGS.ScannerActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
     </application>
 
 </manifest>
