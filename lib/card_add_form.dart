@@ -401,16 +401,20 @@ class _CardAddForm extends State<CardAddForm> {
   }
 
   _complete(Map result) {
+    print("RESULT:");
     print(result);
     if (result.containsKey("response")) {
       final response = result["response"];
       final secure3ds = response["3DSecure"];
       final gatewayCode = secure3ds["gatewayCode"] as String;
-      if (gatewayCode == GatewayResponse.AUTHENTICATION_SUCCESSFUL) {
+      if (gatewayCode == GatewayResponse.AUTHENTICATION_SUCCESSFUL ||
+          gatewayCode == GatewayResponse.AUTHENTICATION_ATTEMPTED) {
         _sendAddCardRequest();
       } else {
         this._setErrorMessage("3DS authentication failed!");
       }
+    }else{
+      print("NOT CONTAINING THE RESPONSE");
     }
   }
 

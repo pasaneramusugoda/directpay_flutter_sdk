@@ -2,7 +2,7 @@ import 'dart:io';
 
 import '../flutter_mpgs.dart';
 
-const String STAGE = Environment.DEV; //DEV or PROD
+const String STAGE = Environment.PROD; //DEV or PROD
 const bool IS_DEV = false; //use to enable logs
 
 class Environment {
@@ -36,6 +36,7 @@ class ScreenState {
 
 class GatewayResponse {
   static const String AUTHENTICATION_SUCCESSFUL = "AUTHENTICATION_SUCCESSFUL";
+  static const String AUTHENTICATION_ATTEMPTED = "AUTHENTICATION_ATTEMPTED";
   static const String REDIRECT_SCHEMA = "https";
   static const String ACS_RESULT = "acsResult";
   static const String REDIRECT_HOST = "prod.orelpay.lk";
