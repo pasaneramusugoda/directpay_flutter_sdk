@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mpgs_sdk/card_add_form.dart';
 import 'package:flutter_mpgs_sdk/models/card_data.dart';
@@ -11,11 +10,12 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  bool _showCardInput = false;
-  CardAction _cardAction;
-  CardData _cardData;
+  bool _showCardInput = false; // Displays CardAddForm widget when true
+  CardAction _cardAction; // Card Action type ONE TIME PAYMENT , CARD ADD
+  CardData _cardData; // Card Data model
 
   void onCloseCardForm() {
+    // Triggered when CardAddForm is closed
     setState(() {
       _showCardInput = false;
     });
@@ -30,19 +30,22 @@ class _MyAppState extends State<MyApp> {
       String amount,
       String currency,
       String card) {
+
+    // Triggered when Payment Complete
     print("Status:" + status);
     print("Transaction ID:" + transactionId);
     print("Description:" + description);
   }
 
   void onCardAddComplete(String status,String description){
+    // Triggered when Card Add Complete
     print("Status:" + status);
     print("Description:" + description);
   }
 
   @override
   void initState() {
-    // Replace with your access Token here
+    // Replace with your merchant id here
     CardAddForm.init("DP00001",Environment.SANDBOX);
     super.initState();
   }

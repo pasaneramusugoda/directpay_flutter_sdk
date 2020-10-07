@@ -1,8 +1,8 @@
 name: flutter_mpgs_sdk
-description: A new Flutter plugin.
-version: 1.0.0
-author:
-homepage:
+description: Flutter Package for Directpay
+version: 0.0.1
+author: directpay.lk
+homepage: directpay.lk
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

@@ -5,53 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eef4e01e-ef67-4f1b-b8f7-2a0c0ca17732" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/assets/images/amex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/assets/images/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/assets/images/checkmark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/assets/images/directpay_full.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/assets/images/discover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/assets/images/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/assets/images/others.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/assets/images/visacard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/component/custom_round_button.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/back_card_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_cvv.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_logo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_name.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_number.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_sign.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_valid.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/front_card_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/input_view_pager.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/my_appbar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/reset_button.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/round_button.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/yellow_border.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/constants/captions.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/constants/constanst.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/credit_card_input_form.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/model/card_info.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/provider/card_cvv_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/provider/card_name_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/provider/card_number_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/provider/card_valid_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/provider/state_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/util/util.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/card_data.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/_template__of_Flutter.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/assets/images/orelpay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/card_add_form.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/card_add_form.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/api_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/api_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/parameters.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/parameters.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_mpgs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_mpgs.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_mpgs_sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_directpay_sdk.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/flutter_mpgs_sdk_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/flutter_mpgs_sdk_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +70,19 @@
       <option name="presentableId" value="Default" />
       <updated>1578984353294</updated>
     </task>
+    <task id="LOCAL-00001" summary="001 beta complete">
+      <created>1602073016168</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602073016192</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="001 beta complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="001 beta complete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601976840530">
@@ -122,26 +93,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="538" y="134" key="AndroidProcessChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1602070158707" />
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1602073014661">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602073014661" />
     <state width="553" height="466" key="DebuggerActiveHint" timestamp="1602070406759">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="553" height="466" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1602070406759" />
-    <state width="1323" height="107" key="GridCell.Tab.0.bottom" timestamp="1602072602636">
+    <state width="1323" height="107" key="GridCell.Tab.0.bottom" timestamp="1602075789896">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="107" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602072602636" />
-    <state width="1323" height="107" key="GridCell.Tab.0.center" timestamp="1602072602636">
+    <state width="1323" height="107" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602075789896" />
+    <state width="1323" height="107" key="GridCell.Tab.0.center" timestamp="1602075789896">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="107" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602072602636" />
-    <state width="1323" height="107" key="GridCell.Tab.0.left" timestamp="1602072602636">
+    <state width="1323" height="107" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602075789896" />
+    <state width="1323" height="107" key="GridCell.Tab.0.left" timestamp="1602075789896">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="107" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602072602636" />
-    <state width="1323" height="107" key="GridCell.Tab.0.right" timestamp="1602072602636">
+    <state width="1323" height="107" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602075789896" />
+    <state width="1323" height="107" key="GridCell.Tab.0.right" timestamp="1602075789896">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="107" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602072602636" />
+    <state width="1323" height="107" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602075789896" />
     <state width="1306" height="310" key="GridCell.Tab.1.bottom" timestamp="1601916355403">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -162,6 +137,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="11" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601979239863" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1602073894379">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602073894379" />
     <state width="683" height="369" key="XDebugger.FullValuePopup" timestamp="1602062679396">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
