@@ -5,184 +5,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eef4e01e-ef67-4f1b-b8f7-2a0c0ca17732" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/assets/images/amex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/assets/images/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/assets/images/checkmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/assets/images/directpay_full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/assets/images/discover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/assets/images/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/assets/images/others.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/assets/images/visacard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/component/custom_round_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/back_card_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_cvv.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_logo.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_name.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_number.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_sign.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_valid.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/front_card_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/input_view_pager.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/my_appbar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/reset_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/round_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/yellow_border.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/constants/captions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/constants/constanst.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/credit_card_input_form.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/model/card_info.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/provider/card_cvv_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/provider/card_name_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/provider/card_number_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/provider/card_valid_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/provider/state_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/credit_card_input_form/util/util.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/card_data.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/_template__of_Flutter.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_mpgs_sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_mpgs_sdk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/check_3ds_webview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/check_3ds_webview.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/assets/images/orelpay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/card_add_form.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/card_add_form.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/api_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/api_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/parameters.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/parameters.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_mpgs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_mpgs.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/flutter_mpgs_sdk_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/flutter_mpgs_sdk_test.dart" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.dart_tool/" />
-    <ignored path="$PROJECT_DIR$/.idea/" />
-    <ignored path="$PROJECT_DIR$/.pub/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <ignored path="$PROJECT_DIR$/example/.pub/" />
-    <ignored path="$PROJECT_DIR$/example/build/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="0123456789ABCDEF" />
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/flutter_mpgs.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/android/app/src/main/java/com/paymedia/flutter_mpgs_sdk_example/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/pubspec.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/card_add_form.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="351" column="42" selection-start-line="351" selection-start-column="42" selection-end-line="351" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/controllers/check_3ds_webview.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>gsonVersion</find>
-      <find>Check3DSWebView</find>
-      <find>third_party</find>
-      <find>FontFamily.cpp</find>
-    </findStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/lib/flutter_mpgs_sdk.dart" />
-        <option value="$PROJECT_DIR$/android/build.gradle" />
-        <option value="$PROJECT_DIR$/example/pubspec.yaml" />
-        <option value="$PROJECT_DIR$/example/lib/main.dart" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
-        <option value="$PROJECT_DIR$/lib/controllers/check_3ds_webview.dart" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="234" />
-    <option name="y" value="30" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
-  </component>
+  <component name="ProjectId" id="1iRv2EkumfMToy7sQuwWno85ZGb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="flutter_mpgs_sdk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_mpgs_sdk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_mpgs_sdk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_mpgs_sdk" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_mpgs_sdk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_mpgs_sdk" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/assets/images" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sendt\Development\Directpay\Flutter MPGS SDK\flutter-mpgs-sdk\lib\assets\images" />
+      <recent name="C:\Users\sendt\Development\Directpay\Flutter MPGS SDK\flutter-mpgs-sdk\lib\credit_card_input_form" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -197,131 +113,78 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20801815" />
-      <window_info id="Captures" order="1" side_tool="true" />
-      <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="Build Variants" order="5" side_tool="true" />
-      <window_info id="Resources Explorer" order="6" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.22959183" />
-      <window_info anchor="bottom" id="Find" />
-      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.3537415" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.6496599" />
-      <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="4" visible="true" weight="0.7636054" />
-      <window_info anchor="bottom" id="Debug" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.32993197" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Multi-OS Engine" order="9" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Flutter Inspector" order="3" />
-      <window_info anchor="right" id="Flutter Outline" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Flutter Performance" order="6" />
-    </layout>
+  <component name="WindowStateProjectService">
+    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601976840530">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1601976840530" />
+    <state x="538" y="134" key="AndroidProcessChooserDialog" timestamp="1602070158707">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="538" y="134" key="AndroidProcessChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1602070158707" />
+    <state width="553" height="466" key="DebuggerActiveHint" timestamp="1602070406759">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="553" height="466" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1602070406759" />
+    <state width="1323" height="107" key="GridCell.Tab.0.bottom" timestamp="1602072602636">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="107" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602072602636" />
+    <state width="1323" height="107" key="GridCell.Tab.0.center" timestamp="1602072602636">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="107" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602072602636" />
+    <state width="1323" height="107" key="GridCell.Tab.0.left" timestamp="1602072602636">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="107" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602072602636" />
+    <state width="1323" height="107" key="GridCell.Tab.0.right" timestamp="1602072602636">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="107" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602072602636" />
+    <state width="1306" height="310" key="GridCell.Tab.1.bottom" timestamp="1601916355403">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1306" height="310" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601916355403" />
+    <state width="1306" height="310" key="GridCell.Tab.1.center" timestamp="1601916355402">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1306" height="310" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1601916355402" />
+    <state width="1306" height="310" key="GridCell.Tab.1.left" timestamp="1601916355401">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1306" height="310" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1601916355401" />
+    <state width="1306" height="310" key="GridCell.Tab.1.right" timestamp="1601916355403">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1306" height="310" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1601916355403" />
+    <state x="184" y="11" key="SettingsEditor" timestamp="1601979239863">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="11" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601979239863" />
+    <state width="683" height="369" key="XDebugger.FullValuePopup" timestamp="1602062679396">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="683" height="369" key="XDebugger.FullValuePopup/0.0.1366.738@0.0.1366.738" timestamp="1602062679396" />
+    <state x="137" y="109" width="1166" height="538" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1601971941590">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="109" width="1166" height="538" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1366.738@0.0.1366.738" timestamp="1601971941590" />
+    <state x="339" y="167" key="run.anything.popup" timestamp="1601980807184">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="167" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1601980807184" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/example/android/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterMpgsSdkPlugin.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterMpgsSdkPlugin.m">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_mpgs.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterMpgsPlugin.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/android/app/src/main/java/com/paymedia/flutter_mpgs_sdk_example/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/card_add_form.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="351" column="42" selection-start-line="351" selection-start-column="42" selection-end-line="351" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/check_3ds_webview.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/card_add_form.dart</url>
+          <line>837</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

@@ -12,7 +12,8 @@ fetch(BuildContext context, String url, Map params,
   HttpClient httpClient = new HttpClient();
   HttpClientRequest request = await httpClient.postUrl(Uri.parse(url));
   request.headers.set('content-type', 'application/json');
-  request.headers.set('Authorization', 'Bearer ' + CardAddForm.accessToken);
+  request.headers.set('Directpay-Merchant', CardAddForm.merchantId);
+  // request.headers.set('Authorization', 'Bearer ' + CardAddForm.accessToken);
 
   if (params == null) {
     params = Map();
@@ -23,7 +24,7 @@ fetch(BuildContext context, String url, Map params,
   if (IS_DEV) {
     print("url:" + url);
     print(params);
-    print("token: " + CardAddForm.accessToken);
+    // print("token: " + CardAddForm.accessToken);
   }
   request.add(utf8.encode(json.encode(params)));
   HttpClientResponse response = await request.close();
@@ -42,6 +43,12 @@ fetch(BuildContext context, String url, Map params,
         } else if (responseJson["status"] == 400) {
           final code = data["error"];
           final title = data["title"];
+          final message = data["message"];
+
+          failed(code, title, message);
+        } else if(responseJson["status"] == 500){
+          final code = data["code"];
+          final title = "Failed!";
           final message = data["message"];
 
           failed(code, title, message);

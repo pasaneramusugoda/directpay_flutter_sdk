@@ -36,17 +36,17 @@ class FlutterMpgsSdk {
     }
   }
 
-  static Future<Card> startScanner({String ios, String android}) async {
-    final data = await _channel
-        .invokeMethod('scanner', {'license': Platform.isIOS ? ios : android});
-    final card = Card(
-        number: data["number"],
-        cvv: data["cvv"],
-        cardName: data["name"],
-        mm: data["mm"],
-        yy: data["yy"]);
-    return card;
-  }
+//  static Future<Card> startScanner({String ios, String android}) async {
+//    final data = await _channel
+//        .invokeMethod('scanner', {'license': Platform.isIOS ? ios : android});
+//    final card = Card(
+//        number: data["number"],
+//        cvv: data["cvv"],
+//        cardName: data["name"],
+//        mm: data["mm"],
+//        yy: data["yy"]);
+//    return card;
+//  }
 }
 
 class Region {
