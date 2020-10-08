@@ -51,6 +51,11 @@ class _DirectPayCardState extends State<DirectPayCardInput>{
   CardData _payment;
 
   start(CardAction action, CardData payment) {
+    if(_visible){
+      setState(() {
+        close();
+      });
+    }
     setState(() {
       _action = action;
       _payment = payment;
