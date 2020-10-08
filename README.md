@@ -7,6 +7,8 @@ Integrating DirectPay with your Flutter App is made easy with our DirectPay Flut
 
 ## Usage ##
 
+See the [example](https://github.com/directpaylk/directpay_flutter_sdk_example) for better understanding. 
+
 ### Adding DirectPay SDK to your App ###
 
 Add the following dependency to your `pubspec.yaml` file.
