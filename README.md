@@ -1,6 +1,6 @@
 # flutter_mpgs_sdk
 
-A new Flutter plugin.
+DirectPay Flutter SDK
 
 ## Getting Started
 
