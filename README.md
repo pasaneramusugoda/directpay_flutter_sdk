@@ -161,7 +161,7 @@ Flutter versions above `1.20.0` are supported.
 
 #### iOS Support? ####
 
-Supports iOS Versions above 11.0.
+Supports iOS Versions above 8.0.
 
 #### Android Support? #### 
 
