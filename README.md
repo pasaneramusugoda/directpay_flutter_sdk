@@ -163,11 +163,11 @@ Supports Flutter Versions above `1.20.0`.
 
 #### iOS Support? ####
 
-Supports iOS Versions above '8.0'.
+Supports iOS Versions above `8.0`.
 
 #### Android Support? #### 
 
-Supports Android Versions above 'API Level 16'.
+Supports Android Versions above `API Level 16`.
 
 
 ### MORE INFORMATION? ### 
