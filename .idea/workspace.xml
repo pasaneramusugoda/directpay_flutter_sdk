@@ -4,13 +4,18 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eef4e01e-ef67-4f1b-b8f7-2a0c0ca17732" name="Default Changelist" comment="">
+    <list default="true" id="eef4e01e-ef67-4f1b-b8f7-2a0c0ca17732" name="Default Changelist" comment="001 beta complete">
+      <change afterPath="$PROJECT_DIR$/lib/directpay_card_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/minimal_card_input_from/minimal_card_input_form.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_mpgs_sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_directpay_sdk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/card_add_form.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/card_add_form.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/api_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/api_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/parameters.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/parameters.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_mpgs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_mpgs.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/card.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/card_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/support.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/styles/card_styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/styles/card_styles.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +85,42 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="001 beta complete" />
     <option name="LAST_COMMIT_MESSAGE" value="001 beta complete" />
@@ -89,34 +130,38 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1601976840530" />
+    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602124865576">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1602124865576" />
     <state x="538" y="134" key="AndroidProcessChooserDialog" timestamp="1602070158707">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="538" y="134" key="AndroidProcessChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1602070158707" />
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1602073014661">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1602131970982">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602073014661" />
-    <state width="553" height="466" key="DebuggerActiveHint" timestamp="1602070406759">
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602131970982" />
+    <state width="553" height="466" key="DebuggerActiveHint" timestamp="1602090431005">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="553" height="466" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1602070406759" />
-    <state width="1323" height="107" key="GridCell.Tab.0.bottom" timestamp="1602075789896">
+    <state width="553" height="466" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1602090431005" />
+    <state width="1323" height="126" key="GridCell.Tab.0.bottom" timestamp="1602125790789">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="107" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602075789896" />
-    <state width="1323" height="107" key="GridCell.Tab.0.center" timestamp="1602075789896">
+    <state width="1323" height="126" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602125790789" />
+    <state width="1323" height="126" key="GridCell.Tab.0.center" timestamp="1602125790789">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="107" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602075789896" />
-    <state width="1323" height="107" key="GridCell.Tab.0.left" timestamp="1602075789896">
+    <state width="1323" height="126" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602125790789" />
+    <state width="1323" height="126" key="GridCell.Tab.0.left" timestamp="1602125790789">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="107" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602075789896" />
-    <state width="1323" height="107" key="GridCell.Tab.0.right" timestamp="1602075789896">
+    <state width="1323" height="126" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602125790789" />
+    <state width="1323" height="126" key="GridCell.Tab.0.right" timestamp="1602125790789">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="107" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602075789896" />
+    <state width="1323" height="126" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602125790789" />
     <state width="1306" height="310" key="GridCell.Tab.1.bottom" timestamp="1601916355403">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -159,7 +204,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/card_add_form.dart</url>
-          <line>837</line>
+          <line>554</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>

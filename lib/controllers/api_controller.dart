@@ -12,7 +12,7 @@ fetch(BuildContext context, String url, Map params,
   HttpClient httpClient = new HttpClient();
   HttpClientRequest request = await httpClient.postUrl(Uri.parse(url));
   request.headers.set('content-type', 'application/json');
-  request.headers.set('Directpay-Merchant', CardAddForm.merchantId);
+  request.headers.set('Directpay-Merchant', StaticEntry.merchantId);
   // request.headers.set('Authorization', 'Bearer ' + CardAddForm.accessToken);
 
   if (params == null) {
@@ -21,7 +21,7 @@ fetch(BuildContext context, String url, Map params,
 
   params["platform"] = getPlatform();
   params["version"] = Parameters.VERSION;
-  if (IS_DEV) {
+  if (StaticEntry.IS_DEV) {
     print("url:" + url);
     print(params);
     // print("token: " + CardAddForm.accessToken);
@@ -31,7 +31,7 @@ fetch(BuildContext context, String url, Map params,
   // todo - you should check the response.statusCode
   try {
     String reply = await response.transform(utf8.decoder).join();
-    if (IS_DEV) {
+    if (StaticEntry.IS_DEV) {
       print("response: " + reply);
     }
     switch (response.statusCode) {

@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/services.dart';
-import 'package:flutter_mpgs_sdk/models/card.dart';
 
 class FlutterMpgsSdk {
   static const MethodChannel _channel = const MethodChannel('flutter_mpgs_sdk');

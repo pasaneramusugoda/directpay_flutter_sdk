@@ -2,8 +2,16 @@ import 'dart:io';
 
 import '../flutter_mpgs.dart';
 
-String STAGE = Env.DEV; //DEV or PROD
-bool IS_DEV = true; //use to enable logs
+
+
+class StaticEntry{
+  static String accessToken;
+  static String merchantId;
+  static String iosLicense, androidLicense;
+
+  static String STAGE = Env.DEV; //DEV or PROD
+  static bool IS_DEV = true; //use to enable logs
+}
 
 class Env {
   static const String DEV = "dev";
@@ -13,8 +21,8 @@ class Env {
 class Parameters {
   static const String VERSION = "0.0.1";
   static  String REGION =
-      STAGE == Env.PROD ? Region.ASIA_PACIFIC : Region.MTF;
-  static String BASE_URL = STAGE == Env.DEV
+      StaticEntry.STAGE == Env.PROD ? Region.ASIA_PACIFIC : Region.MTF;
+  static String BASE_URL = StaticEntry.STAGE == Env.DEV
       ? "https://dev.directpay.lk/v1/mpg/api/sdk/"
       : "https://prod.directpay.lk/v1/mpg/api/sdk/";
 }
