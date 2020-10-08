@@ -96,7 +96,7 @@ DirectPayCardInput.start(CardAction.ONE_TIME_PAYMENT,CardData.pay(
     amount: 10.00, //double value
     currency: PayCurrency.LKR, //enum
     reference:
-    "zxywvu123456" //Unique value for identify the card holder.
+    "zxywvu123456" //Unique value from merchant.
 ));
 ```
 
@@ -110,7 +110,7 @@ Use this to Tokenize the customer card details to use later
 ```dart
 DirectPayCardInput.start(CardAction.CARD_ADD,CardData.add(
     currency: PayCurrency.LKR,
-    reference:"abcdef123456" //Unique value from merchant.
+    reference:"abcdef123456" //Unique value to identify the card holder.
 ));
 ```
 
