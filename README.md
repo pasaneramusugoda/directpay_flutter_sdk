@@ -159,15 +159,15 @@ Data Object that passes the relevent parameters to the Start method depending on
 
 #### Flutter Support? ####
 
-Flutter versions above `1.20.0` are supported.
+Supports Flutter Versions above `1.20.0`.
 
 #### iOS Support? ####
 
-Supports iOS Versions above 8.0.
+Supports iOS Versions above '8.0'.
 
 #### Android Support? #### 
 
-Supports Android Versions above API Level 16.
+Supports Android Versions above 'API Level 16'.
 
 
 ### MORE INFORMATION? ### 
