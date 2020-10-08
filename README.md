@@ -172,6 +172,6 @@ Supports Android Versions above API Level 16.
 
 ### MORE INFORMATION? ### 
 
-Please Visit [doc.directpay.lk](doc.directpay.lk)
+Please Visit [doc.directpay.lk](https://doc.directpay.lk/)
 
 
