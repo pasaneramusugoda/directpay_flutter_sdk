@@ -4,7 +4,15 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eef4e01e-ef67-4f1b-b8f7-2a0c0ca17732" name="Default Changelist" comment="" />
+    <list default="true" id="eef4e01e-ef67-4f1b-b8f7-2a0c0ca17732" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/paymedia/flutter_mpgs_sdk/FlutterMpgsSdkPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/paymedia/flutter_mpgs_sdk/FlutterMpgsSdkPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/paymedia/flutter_mpgs_sdk/MPGS/ScannerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_mpgs_sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_mpgs_sdk.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +42,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/assets/images" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
@@ -122,78 +130,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Code improvements" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601976840530">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="440" y="178" key="#Project_Structure" timestamp="1611060326682">
+      <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1601976840530" />
-    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602124865576">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="440" y="178" key="#Project_Structure/0.23.1680.980@0.23.1680.980" timestamp="1611060326682" />
+    <state x="492" y="270" width="695" height="486" key="find.popup" timestamp="1611060622353">
+      <screen x="0" y="23" width="1680" height="980" />
     </state>
-    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1602124865576" />
-    <state x="538" y="134" key="AndroidProcessChooserDialog" timestamp="1602070158707">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="538" y="134" key="AndroidProcessChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1602070158707" />
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1602133198445">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602133198445" />
-    <state width="553" height="466" key="DebuggerActiveHint" timestamp="1602090431005">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="553" height="466" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1602090431005" />
-    <state width="1323" height="126" key="GridCell.Tab.0.bottom" timestamp="1602125790789">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="126" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602125790789" />
-    <state width="1323" height="126" key="GridCell.Tab.0.center" timestamp="1602125790789">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="126" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602125790789" />
-    <state width="1323" height="126" key="GridCell.Tab.0.left" timestamp="1602125790789">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="126" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602125790789" />
-    <state width="1323" height="126" key="GridCell.Tab.0.right" timestamp="1602125790789">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="126" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602125790789" />
-    <state width="1306" height="310" key="GridCell.Tab.1.bottom" timestamp="1601916355403">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1306" height="310" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601916355403" />
-    <state width="1306" height="310" key="GridCell.Tab.1.center" timestamp="1601916355402">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1306" height="310" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1601916355402" />
-    <state width="1306" height="310" key="GridCell.Tab.1.left" timestamp="1601916355401">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1306" height="310" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1601916355401" />
-    <state width="1306" height="310" key="GridCell.Tab.1.right" timestamp="1601916355403">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1306" height="310" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1601916355403" />
-    <state x="184" y="11" key="SettingsEditor" timestamp="1601979239863">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="184" y="11" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601979239863" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1602073894379">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602073894379" />
-    <state width="683" height="369" key="XDebugger.FullValuePopup" timestamp="1602062679396">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="683" height="369" key="XDebugger.FullValuePopup/0.0.1366.738@0.0.1366.738" timestamp="1602062679396" />
-    <state x="137" y="109" width="1166" height="538" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1601971941590">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="137" y="109" width="1166" height="538" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1366.738@0.0.1366.738" timestamp="1601971941590" />
-    <state x="339" y="167" key="run.anything.popup" timestamp="1601980807184">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="339" y="167" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1601980807184" />
+    <state x="492" y="270" width="695" height="486" key="find.popup/0.23.1680.980@0.23.1680.980" timestamp="1611060622353" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -205,78 +149,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>flutter_mpgs_sdk</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Dart SDK</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
