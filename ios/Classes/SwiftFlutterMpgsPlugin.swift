@@ -1,5 +1,6 @@
 import Flutter
 import UIKit
+<<<<<<< HEAD
 import Microblink
 
 public class SwiftFlutterMPGSPlugin: NSObject, FlutterPlugin, MBBlinkCardOverlayViewControllerDelegate {
@@ -9,6 +10,14 @@ public class SwiftFlutterMPGSPlugin: NSObject, FlutterPlugin, MBBlinkCardOverlay
     var gateway:Gateway? = nil
     var apiVersion:String? = nil
     var microblinkLicense:String? = nil
+=======
+
+public class SwiftFlutterMPGSPlugin: NSObject, FlutterPlugin {
+    var flutterResult: FlutterResult?
+
+    var gateway:Gateway? = nil
+    var apiVersion:String? = nil
+>>>>>>> directpay
     
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "flutter_mpgs_sdk", binaryMessenger: registrar.messenger())
@@ -40,6 +49,7 @@ public class SwiftFlutterMPGSPlugin: NSObject, FlutterPlugin, MBBlinkCardOverlay
                 self.gateway = Gateway(region: getRegion(region), merchantId: gatewayId)
                 result(true)
                 break
+<<<<<<< HEAD
             case "scanner":
                 self.flutterResult = result
                 self.microblinkLicense = arguments.value(forKey: "license") as? String
@@ -72,6 +82,40 @@ public class SwiftFlutterMPGSPlugin: NSObject, FlutterPlugin, MBBlinkCardOverlay
                     topController.present(recognizerRunneViewController, animated: true, completion: nil)
                 }
                 break
+=======
+//            case "scanner":
+//                self.flutterResult = result
+//                self.microblinkLicense = arguments.value(forKey: "license") as? String
+//                if(self.microblinkLicense == nil){
+//                    result(nil)
+//                }
+//                MBMicroblinkSDK.sharedInstance().setLicenseKey(self.microblinkLicense!)
+//
+//                /** Create BlinkCard recognizer */
+//                blinkCardRecognizer = MBBlinkCardRecognizer()
+//
+//                /** Create BlinkCard settings */
+//                let settings : MBBlinkCardOverlaySettings = MBBlinkCardOverlaySettings()
+//
+//                /** Crate recognizer collection */
+//                let recognizerList = [blinkCardRecognizer!]
+//                let recognizerCollection : MBRecognizerCollection = MBRecognizerCollection(recognizers: recognizerList)
+//
+//                /** Create your overlay view controller */
+//                let blinkCardOverlayViewController = MBBlinkCardOverlayViewController(settings: settings, recognizerCollection: recognizerCollection, delegate: self)
+//
+//                /** Create recognizer view controller with wanted overlay view controller */
+//                let recognizerRunneViewController : UIViewController = MBViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: blinkCardOverlayViewController)
+//                recognizerRunneViewController.modalPresentationStyle = .fullScreen
+//                if var topController = UIApplication.shared.keyWindow?.rootViewController {
+//                    while let presentedViewController = topController.presentedViewController {
+//                        topController = presentedViewController
+//                    }
+//                    /** Present the recognizer runner view controller. You can use other presentation methods as well (instead of presentViewController) */
+//                    topController.present(recognizerRunneViewController, animated: true, completion: nil)
+//                }
+//                break
+>>>>>>> directpay
             case "updateSession":
                 if(gateway == nil){
                     print("Not initialized!")
@@ -117,6 +161,7 @@ public class SwiftFlutterMPGSPlugin: NSObject, FlutterPlugin, MBBlinkCardOverlay
         }
     }
     
+<<<<<<< HEAD
     public func blinkCardOverlayViewControllerDidFinishScanning(_ blinkCardOverlayViewController: MBBlinkCardOverlayViewController, state: MBRecognizerResultState) {
 
         if(self.flutterResult != nil){
@@ -138,4 +183,6 @@ public class SwiftFlutterMPGSPlugin: NSObject, FlutterPlugin, MBBlinkCardOverlay
     public func blinkCardOverlayViewControllerDidTapClose(_ blinkCardOverlayViewController: MBBlinkCardOverlayViewController) {
         blinkCardOverlayViewController.dismiss(animated: true, completion: nil)
     }
+=======
+>>>>>>> directpay
 }

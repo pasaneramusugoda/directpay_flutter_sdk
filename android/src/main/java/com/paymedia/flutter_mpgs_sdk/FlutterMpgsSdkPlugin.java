@@ -5,25 +5,11 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.net.ConnectivityManager;
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.microblink.MicroblinkSDK;
-import com.microblink.entities.recognizers.Recognizer;
-import com.microblink.entities.recognizers.RecognizerBundle;
-import com.microblink.entities.recognizers.blinkcard.BlinkCardRecognizer;
-import com.microblink.fragment.overlay.blinkcard.scanlineui.ScanLineOverlayStrings;
-import com.microblink.recognition.RecognitionSuccessType;
-import com.microblink.uisettings.ActivityRunner;
-import com.microblink.uisettings.BlinkCardUISettings;
-import com.microblink.view.recognition.ScanResultListener;
-import com.paymedia.flutter_mpgs_sdk.MPGS.ScannerActivity;
 
 import java.util.HashMap;
 
@@ -139,13 +125,13 @@ public class FlutterMpgsSdkPlugin extends BroadcastReceiver implements FlutterPl
                     });
                 }
             });
-        } else if (methodCall.method.equals("scanner")) {
-            FlutterMpgsSdkPlugin.result = result;
-            final String license = methodCall.argument("license");
-            MicroblinkSDK.setLicenseKey(license, FlutterMpgsSdkPlugin.activity);
-            // create BlinkCardRecognizer
-            Intent intent = new Intent(FlutterMpgsSdkPlugin.activity, ScannerActivity.class);
-            FlutterMpgsSdkPlugin.activity.startActivity(intent);
+//        } else if (methodCall.method.equals("scanner")) {
+//            FlutterMpgsSdkPlugin.result = result;
+//            final String license = methodCall.argument("license");
+//            MicroblinkSDK.setLicenseKey(license, FlutterMpgsSdkPlugin.activity);
+//            // create BlinkCardRecognizer
+//            Intent intent = new Intent(FlutterMpgsSdkPlugin.activity, ScannerActivity.class);
+//            FlutterMpgsSdkPlugin.activity.startActivity(intent);
         } else {
             result.notImplemented();
         }
