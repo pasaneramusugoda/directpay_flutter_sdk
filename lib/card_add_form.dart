@@ -334,7 +334,7 @@ class _CardAddForm extends State<CardAddForm> {
 
       final Map params = Map();
 
-      params["merchantId"] = "";
+      params["merchantId"] = StaticEntry.merchantId;
       params["_sessionId"] = _session;
       params["amount"] = 5;
 
