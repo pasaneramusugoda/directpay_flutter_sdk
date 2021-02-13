@@ -336,7 +336,11 @@ class _CardAddForm extends State<CardAddForm> {
 
       params["merchantId"] = StaticEntry.merchantId;
       params["_sessionId"] = _session;
-      params["amount"] = 5;
+      if(widget.payment != null){
+        params["amount"] = widget.payment.amount.toString();
+      }else{
+        params["amount"] = 5;
+      }
 
       await fetch(context, APIRoutes.CHECK_3DS, params, success: (data) async {
         final type = data["type"];
