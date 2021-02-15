@@ -59,7 +59,7 @@ class _MyAppState extends State<MyApp> {
                   case "pay":
                     _cardAction = CardAction.ONE_TIME_PAYMENT;
                     _cardData = CardData.pay(
-                        amount: 10.00,
+                        amount: 11.99,
                         currency: PayCurrency.LKR,
                         reference:
                         "zxywvu123456" //Unique value for identify the card holder.
