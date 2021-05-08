@@ -1,6 +1,6 @@
 name: flutter_mpgs_sdk
 description: Flutter Package for Directpay
-version: 0.0.1
+version: 0.0.1+1
 author: directpay.lk
 homepage: directpay.lk
 
@@ -10,10 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  mask_text_input_formatter: ^1.0.6
+  mask_text_input_formatter: ^1.2.1
   flutter_webview_plugin: ^0.3.11
-  provider: ^4.3.2+2
-  flip_card: ^0.4.4
+  provider: ^5.0.0
+  flip_card: ^0.5.0
 
 dev_dependencies:
   flutter_test:
