@@ -1,7 +1,9 @@
+import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 import 'parameters.dart';
 
@@ -17,60 +19,53 @@ class Check3DSWebView extends StatefulWidget {
 
 class _Check3DSWebView extends State<Check3DSWebView> {
   Map? parsedACSResult;
-  final flutterWebviewPlugin = new FlutterWebviewPlugin();
+  final Completer<WebViewController> _controller =
+      Completer<WebViewController>();
 
   @override
   void initState() {
     super.initState();
-    flutterWebviewPlugin.onUrlChanged.listen((String url) {
-      print(url);
-      _handleUriChange(url);
-    });
+    if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
   }
 
   @override
   Widget build(BuildContext context) {
-    return WebviewScaffold(
-//        backgroundColor: Colors.white,
-        appBar: new AppBar(
-          backgroundColor: Colors.white,
-          centerTitle: true,
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back),
-            color: Colors.blueAccent,
-            onPressed: () {
-              Navigator.of(context).pop(this.parsedACSResult);
-            },
-          ),
-          title: new Text(
-            this.widget.title,
-            textAlign: TextAlign.center,
-          ),
+    return Scaffold(
+      appBar: new AppBar(
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          color: Colors.blueAccent,
+          onPressed: () {
+            Navigator.of(context).pop(this.parsedACSResult);
+          },
         ),
-        url: new Uri.dataFromString(this.widget.html, mimeType: 'text/html')
+        title: new Text(
+          this.widget.title,
+          textAlign: TextAlign.center,
+        ),
+      ),
+      body: WebView(
+        onPageFinished: (url) {
+          this._handleUriChange(url);
+        },
+        javascriptMode: JavascriptMode.unrestricted,
+        onWebViewCreated: (WebViewController webViewController) {
+          _controller.complete(webViewController);
+        },
+        initialUrl: Uri.dataFromString(this.widget.html, mimeType: 'text/html')
             .toString(),
-//      initialChild: Center(
-//        child: CircularProgressIndicator(),
-//      ),
-//        body: WebView(
-//          onPageFinished: (url) {
-//            this._handleUriChange(url);
-//          },
-//          javascriptMode: JavascriptMode.unrestricted,
-//          onWebViewCreated: (WebViewController webViewController) {
-//            _controller.complete(webViewController);
-//          },
-//          initialUrl:
-//              Uri.dataFromString(this.widget.html, mimeType: 'text/html')
-//                  .toString(),
-//        )
+        navigationDelegate: (navigation) => _handleUriChange(navigation.url),
+      ),
     );
   }
 
-  void _handleUriChange(String url) {
+  NavigationDecision _handleUriChange(String url) {
     print("URL :" + url);
     final Uri uri = Uri.parse(url);
-    if (uri.isScheme(GatewayResponse.REDIRECT_SCHEMA) && uri.host == GatewayResponse.REDIRECT_HOST) {
+    if (uri.isScheme(GatewayResponse.REDIRECT_SCHEMA) &&
+        uri.host == GatewayResponse.REDIRECT_HOST) {
       final params = uri.queryParameters;
       params.forEach((key, value) {
         if (key == GatewayResponse.ACS_RESULT) {
@@ -80,5 +75,6 @@ class _Check3DSWebView extends State<Check3DSWebView> {
         }
       });
     }
+    return NavigationDecision.navigate;
   }
 }
