@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import '../provider/card_name_provider.dart';
 import 'package:provider/provider.dart';
+
 import '../constants/constanst.dart';
+import '../provider/card_name_provider.dart';
 
 class CardSign extends StatelessWidget {
   const CardSign({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

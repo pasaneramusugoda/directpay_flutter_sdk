@@ -1,14 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_mpgs_sdk/card_add_form.dart';
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:flutter/material.dart';
 import 'package:flutter_mpgs_sdk/controllers/parameters.dart';
 
-fetch(BuildContext context, String url, Map params,
-    {Function(Map<String, dynamic> data) success,
-    Function(String code, String title, String message) failed,
-    Function() completed}) async {
+fetch(BuildContext context, String url, Map? params,
+    {required Function(Map<String, dynamic> data) success,
+    required Function(String code, String title, String message) failed,
+    required Function() completed}) async {
   HttpClient httpClient = new HttpClient();
   HttpClientRequest request = await httpClient.postUrl(Uri.parse(url));
   request.headers.set('content-type', 'application/json');

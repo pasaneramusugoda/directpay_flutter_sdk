@@ -1,5 +1,5 @@
-import 'dart:async';
 import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
@@ -9,14 +9,14 @@ class Check3DSWebView extends StatefulWidget {
   final String title = "Verify 3DS Authentication";
   final String html;
 
-  Check3DSWebView({@required this.html});
+  Check3DSWebView({required this.html});
 
   @override
   State<StatefulWidget> createState() => _Check3DSWebView();
 }
 
 class _Check3DSWebView extends State<Check3DSWebView> {
-  Map parsedACSResult;
+  Map? parsedACSResult;
   final flutterWebviewPlugin = new FlutterWebviewPlugin();
 
   @override

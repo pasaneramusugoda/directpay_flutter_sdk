@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../provider/state_provider.dart';
 import 'package:provider/provider.dart';
 
 import '../constants/constanst.dart';
+import '../provider/state_provider.dart';
 
 class RoundButton extends StatefulWidget {
-  final Function onTap;
+  final Function()? onTap;
   final buttonTitle;
   final decoration;
   final textStyle;

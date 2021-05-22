@@ -12,7 +12,7 @@ class Captions {
     'RESET': 'Reset',
   };
 
-  Map<String, String> _captions;
+  late Map<String, String> _captions;
 
   Captions({customCaptions}) {
     _captions = {};
@@ -21,6 +21,6 @@ class Captions {
   }
 
   String getCaption(String key) {
-    return _captions.containsKey(key) ? _captions[key] : key;
+    return _captions.containsKey(key) ? _captions[key] ?? key : key;
   }
 }

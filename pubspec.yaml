@@ -1,11 +1,11 @@
 name: flutter_mpgs_sdk
 description: Flutter Package for Directpay
-version: 0.0.1+1
+version: 0.1.0
 author: directpay.lk
 homepage: directpay.lk
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:

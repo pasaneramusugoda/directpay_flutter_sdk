@@ -3,15 +3,36 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="eef4e01e-ef67-4f1b-b8f7-2a0c0ca17732" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/paymedia/flutter_mpgs_sdk/FlutterMpgsSdkPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/paymedia/flutter_mpgs_sdk/FlutterMpgsSdkPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/paymedia/flutter_mpgs_sdk/MPGS/ScannerActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_mpgs_sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_mpgs_sdk.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/card_add_form.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/card_add_form.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/component/custom_round_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/component/custom_round_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/api_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/api_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/check_3ds_webview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/check_3ds_webview.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/parameters.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/parameters.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_sign.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/card_sign.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/credit_card_input_form/components/input_view_pager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/input_view_pager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/credit_card_input_form/components/reset_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/reset_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/credit_card_input_form/components/round_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/credit_card_input_form/components/round_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/credit_card_input_form/constants/captions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/credit_card_input_form/constants/captions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/credit_card_input_form/credit_card_input_form.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/credit_card_input_form/credit_card_input_form.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/credit_card_input_form/model/card_info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/credit_card_input_form/model/card_info.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/directpay_card_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/directpay_card_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_mpgs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_mpgs.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/minimal_card_input_from/minimal_card_input_form.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/support.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/support.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +53,13 @@
   <component name="ProjectId" id="1iRv2EkumfMToy7sQuwWno85ZGb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
@@ -60,6 +83,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -85,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602133199311</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="library updates">
+      <created>1620452249863</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620452249863</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,33 +149,61 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="001 beta complete" />
     <MESSAGE value="Code improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code improvements" />
+    <MESSAGE value="library updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="library updates" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="178" key="#Project_Structure" timestamp="1611060326682">
-      <screen x="0" y="23" width="1680" height="980" />
+    <state x="111" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620489581265">
+      <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="440" y="178" key="#Project_Structure/0.23.1680.980@0.23.1680.980" timestamp="1611060326682" />
-    <state x="492" y="270" width="695" height="486" key="find.popup" timestamp="1611060622353">
-      <screen x="0" y="23" width="1680" height="980" />
+    <state x="111" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1620489581265" />
+    <state x="222" y="117" key="CommitChangelistDialog2" timestamp="1620452249604">
+      <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="492" y="270" width="695" height="486" key="find.popup/0.23.1680.980@0.23.1680.980" timestamp="1611060622353" />
+    <state x="222" y="117" key="CommitChangelistDialog2/0.25.1680.1025@0.25.1680.1025" timestamp="1620452249604" />
+    <state width="1252" height="269" key="GridCell.Tab.0.bottom" timestamp="1620549261162">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1252" height="269" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1620549261162" />
+    <state width="1252" height="269" key="GridCell.Tab.0.center" timestamp="1620549261161">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1252" height="269" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1620549261161" />
+    <state width="1252" height="269" key="GridCell.Tab.0.left" timestamp="1620549261161">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1252" height="269" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1620549261161" />
+    <state width="1252" height="269" key="GridCell.Tab.0.right" timestamp="1620549261161">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1252" height="269" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1620549261161" />
+    <state x="247" y="262" key="Vcs.Push.Dialog.v2" timestamp="1620452254442">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="247" y="262" key="Vcs.Push.Dialog.v2/0.25.1680.1025@0.25.1680.1025" timestamp="1620452254442" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/card_add_form.dart</url>
-          <line>554</line>
+          <line>550</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>

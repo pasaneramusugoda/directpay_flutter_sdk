@@ -5,47 +5,46 @@ import 'package:flutter_mpgs_sdk/controllers/check_3ds_webview.dart';
 import 'package:flutter_mpgs_sdk/controllers/parameters.dart';
 import 'package:flutter_mpgs_sdk/credit_card_input_form/constants/constanst.dart';
 import 'package:flutter_mpgs_sdk/styles/card_styles.dart';
-import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
+
 import 'component/custom_round_button.dart';
 import 'credit_card_input_form/credit_card_input_form.dart';
 import 'credit_card_input_form/model/card_info.dart';
 import 'flutter_mpgs.dart';
 import 'support.dart';
 
-
 class CardAddForm extends StatefulWidget {
-
-  final directPayOnCloseHandler onCloseCardForm; // Triggers when card form is closed
-  final directPayOnErrorHandler onErrorCardForm; // Triggers when card form has errors
+  final directPayOnCloseHandler
+      onCloseCardForm; // Triggers when card form is closed
+  final directPayOnErrorHandler
+      onErrorCardForm; // Triggers when card form has errors
   final directPayOnCompleteHandler
       onTransactionCompleteResponse; // Triggers when transaction reaches end of cycle
   final CardAction action;
   final CardData payment;
-  CardAddForm(
-      {this.onCloseCardForm,
-      this.onTransactionCompleteResponse,
-      this.onErrorCardForm,this.payment,this.action});
 
+  CardAddForm(
+      {required this.onCloseCardForm,
+      required this.onTransactionCompleteResponse,
+      required this.onErrorCardForm,
+      required this.payment,
+      required this.action});
 
   createState() => _CardAddForm();
 }
 
 class _CardAddForm extends State<CardAddForm> {
-  CardInfo _cardInfo;
-  String _session, _reference;
+  CardInfo? _cardInfo;
+  String? _session, _reference;
   bool _processing = false;
 
   ScreenState _screenState = ScreenState.ADD_CARD_WIDGET;
-  String _errorMessage, _errorTitle, _otpText = "";
-
+  String? _errorMessage, _errorTitle, _otpText = "";
 
   void close() {
     widget.onCloseCardForm();
   }
 
   // final _otpFormKey = GlobalKey<FormState>();
-
-
 
   final Map<String, String> customCaptions = {
     'PREV': 'Prev',
@@ -68,19 +67,18 @@ class _CardAddForm extends State<CardAddForm> {
 
   @override
   Widget build(BuildContext context) {
-      return SingleChildScrollView(
-        child: IgnorePointer(
-            ignoring: _processing,
-            child: Container(
-                color: Colors.transparent,
-                child: SafeArea(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [_buildUI(), _poweredBy()],
-                  ),
-                ))),
-      );
-
+    return SingleChildScrollView(
+      child: IgnorePointer(
+          ignoring: _processing,
+          child: Container(
+              color: Colors.transparent,
+              child: SafeArea(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [_buildUI(), _poweredBy()],
+                ),
+              ))),
+    );
   }
 
   _buildUI() {
@@ -123,8 +121,8 @@ class _CardAddForm extends State<CardAddForm> {
                 });
               } else if (currentState == InputState.DONE && !_processing) {
                 _cardInfo = cardInfo;
-                _continue(cardInfo.name, cardInfo.cardNumber, cardInfo.validate,
-                    cardInfo.cvv);
+                _continue(cardInfo.name!, cardInfo.cardNumber!,
+                    cardInfo.validate!, cardInfo.cvv!);
               }
             },
             customCaptions: customCaptions,
@@ -143,8 +141,6 @@ class _CardAddForm extends State<CardAddForm> {
         ]),
       ),
     );
-
-
   }
 
   // _otpUI() {
@@ -284,7 +280,7 @@ class _CardAddForm extends State<CardAddForm> {
   }
 
   _errorContainer() {
-    widget.onErrorCardForm(this._errorTitle,this._errorMessage);
+    widget.onErrorCardForm(this._errorTitle, this._errorMessage);
     return this._errorMessage != null
         ? Container(
             width: double.infinity,
@@ -294,11 +290,11 @@ class _CardAddForm extends State<CardAddForm> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _errorTitle != null
-                    ? Text(_errorTitle,
+                    ? Text(_errorTitle!,
                         style: TextStyle(
                             color: Colors.red, fontWeight: FontWeight.bold))
                     : Container(),
-                Text(_errorMessage, style: TextStyle(color: Colors.red))
+          Text(_errorMessage!, style: TextStyle(color: Colors.red))
               ],
             ),
           )
@@ -316,12 +312,12 @@ class _CardAddForm extends State<CardAddForm> {
     String yy = date.split('/')[1];
 
     _session = await this._getSession();
-    print("session: " + _session);
+    print("session: $_session");
     if (_session != null) {
       _setProcessing(true);
       try {
         await FlutterMpgsSdk.updateSession(
-            sessionId: _session,
+            sessionId: _session!,
             cardNumber: number,
             cardHolder: name,
             cvv: cvv,
@@ -336,9 +332,9 @@ class _CardAddForm extends State<CardAddForm> {
 
       params["merchantId"] = StaticEntry.merchantId;
       params["_sessionId"] = _session;
-      if(widget.payment != null){
+      if (widget.payment != null) {
         params["amount"] = widget.payment.amount.toString();
-      }else{
+      } else {
         params["amount"] = 5;
       }
 
@@ -573,8 +569,8 @@ class _CardAddForm extends State<CardAddForm> {
           String currency =
               data.containsKey("currency") ? data["currency"] : "";
           String card = data.containsKey("card") ? data["card"]["number"] : "";
-          widget.onTransactionCompleteResponse(status, transactionId,
-              description);
+          widget.onTransactionCompleteResponse(
+              status, transactionId, description);
 
           if (status == "SUCCESS") {
             setState(() {
@@ -611,15 +607,15 @@ class _CardAddForm extends State<CardAddForm> {
     });
   }
 
-  _setErrorMessage(String message, {String title}) {
+  _setErrorMessage(String? message, {String? title}) {
     setState(() {
       this._errorTitle = title;
       this._errorMessage = message;
     });
   }
 
-  Future<String> _getSession() async {
-    String session;
+  Future<String?> _getSession() async {
+    String? session;
     _setProcessing(true);
 
     await fetch(context, APIRoutes.GET_SESSION, null, success: (data) {

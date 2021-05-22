@@ -1,9 +1,10 @@
-import '../constants/captions.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../constants/captions.dart';
+
 class ResetButton extends StatefulWidget {
-  final Function onTap;
+  final Function()? onTap;
   final decoration;
   final textStyle;
 

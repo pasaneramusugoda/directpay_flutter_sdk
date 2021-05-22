@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'dart:io';
+
 import 'package:flutter/services.dart';
 
 class FlutterMpgsSdk {
@@ -10,18 +10,19 @@ class FlutterMpgsSdk {
     return version;
   }
 
-  static Future init({String gatewayId, String region, apiVersion}) async {
+  static Future init(
+      {required String gatewayId, required String region, apiVersion}) async {
     await _channel.invokeMethod('init',
         {'gatewayId': gatewayId, 'region': region, 'apiVersion': apiVersion});
   }
 
   static Future<void> updateSession(
-      {String sessionId,
-      String cardHolder,
-      String cardNumber,
-      String year,
-      String month,
-      String cvv}) async {
+      {required String sessionId,
+      required String cardHolder,
+      required String cardNumber,
+      required String year,
+      required String month,
+      required String cvv}) async {
     print(sessionId);
     {
       await _channel.invokeMethod('updateSession', {

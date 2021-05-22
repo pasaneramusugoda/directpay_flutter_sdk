@@ -1,14 +1,15 @@
-import '../constants/captions.dart';
-import '../util/util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+
+import '../constants/captions.dart';
 import '../constants/constanst.dart';
 import '../provider/card_cvv_provider.dart';
 import '../provider/card_name_provider.dart';
+import '../provider/card_number_provider.dart';
 import '../provider/card_valid_provider.dart';
 import '../provider/state_provider.dart';
-import 'package:flutter/services.dart';
-import 'package:provider/provider.dart';
-import '../provider/card_number_provider.dart';
+import '../util/util.dart';
 
 class InputViewPager extends StatelessWidget {
   final pageController;
@@ -56,7 +57,7 @@ class InputViewPager extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: InputForm(
                     focusNode: focusNodes[index],
-                    title: titleMap[index],
+                    title: titleMap[index]!,
                     index: index,
                     pageController: pageController),
               );
@@ -69,10 +70,13 @@ class InputForm extends StatefulWidget {
   final String title;
   final int index;
   final PageController pageController;
-  final FocusNode focusNode;
+  final FocusNode? focusNode;
 
   InputForm(
-      {@required this.title, this.index, this.pageController, this.focusNode});
+      {required this.title,
+      required this.index,
+      required this.pageController,
+      this.focusNode});
 
   @override
   _InputFormState createState() => _InputFormState();
@@ -81,13 +85,13 @@ class InputForm extends StatefulWidget {
 class _InputFormState extends State<InputForm> {
   var opacicy = 0.3;
 
-  int maxLength;
-  TextInputType textInputType;
+  int maxLength = 0;
+  TextInputType textInputType = TextInputType.text;
   TextEditingController textController = TextEditingController();
 
   void onChange() {
     setState(() {
-      if (widget.index == widget.pageController.page.round()) {
+      if (widget.index == widget.pageController.page!.round()) {
         opacicy = 1;
       } else {
         opacicy = 0.3;
@@ -95,7 +99,7 @@ class _InputFormState extends State<InputForm> {
     });
   }
 
-  String value;
+  late String value;
 
   @override
   void initState() {
@@ -201,7 +205,7 @@ class _InputFormState extends State<InputForm> {
                   height: 0,
                 ),
                 contentPadding:
-                    const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10),
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10),
                 border: OutlineInputBorder(
                     borderSide: BorderSide(width: 1, color: Colors.black38),
                     borderRadius: BorderRadius.circular(5)),
